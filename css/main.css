@@ -20,7 +20,7 @@ html {
 
 article {
   max-width: 43em;
-  margin: 0 1em;
+  margin: 0 .5em;
 }
 
 article h1 {
@@ -29,15 +29,17 @@ article h1 {
 
 article header {
   border-bottom: 1px solid #999;
+  padding-bottom: .2em;
 }
 
 article header p {
   font-style: italic;
-  margin-top: -1em;
+  margin-top: -1.2em;
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 0.95rem;
+  margin-top: 1.5em;
 }
 
 article > p:last-child {
@@ -49,19 +51,33 @@ blockquote {
   max-width: 24em;
   color: #555;
   font-size: 1.125rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .quote {
   color: #999;
-  margin-left: -3em;
 }
 
 ol {
   margin-left: -1.5em;
 }
 
+@media only screen and (min-width: 25em) {
+
+  article {
+    display: inline-block;
+    margin-top: -.5em;
+  }
+
+  p {
+    font-size: .98rem;
+  }
+
+}
+
 @media only screen and (min-width: 38em) {
 
-  .quote {
-    margin-left: -2em;
+  blockquote {
+    margin-left: 3em;
   }
